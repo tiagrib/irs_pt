@@ -150,6 +150,7 @@ def simular(titulo, independente):
 
     ax.grid(color=cor_grelha_colecta_percentagem, alpha=0.3)
     ax3.grid(axis='y', color=cor_diferenca, linestyle='--', linewidth=1, alpha=0.5)
+    ax3.hlines(0, inicio_rendimentos, final_rendimentos, color=cor_diferenca, linestyle='-', linewidth=2, alpha=0.4)
 
     lines_labels = [a.get_legend_handles_labels() for a in fig.axes]
     lines, labels = [sum(lol, []) for lol in zip(*lines_labels)]
